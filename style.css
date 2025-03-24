@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+
 body {
     background-color: rgb(167, 198, 226);
 }
 
 .fundo {
-    background-color: rgb(167, 198, 2265);
+    background-color: rgb(167, 198, 225);
     width: 100vw;
     height: 100vh;
     color: azure;
@@ -17,7 +20,7 @@ body {
         235deg,  /* Ângulo das listras */
         #4e2707,  /* Cor 1 */
         #231d0e 20px,  /* Espessura da listra */
-        #131313 20px,  /* Cor 2 */
+        #402503 20px,  /* Cor 2 */
         #2a2929 40px   /* Espaço entre as listras */
     );
     width: 80vw;
@@ -46,9 +49,11 @@ body {
 .container-botoes {
     display: flex;
     justify-content: center;
-    gap: 5%;
-    width: 85%;
+    gap: 5px;
+    width: 100%;
     padding: 20px 10px 10px 10px;
+    text-align: center;
+    align-items: center;
 }
 
 .selecao {
@@ -57,7 +62,7 @@ body {
     padding: 5px;
     border: none;
     cursor: pointer;
-    width: 20%;
+    width: 150px;
     text-align: center;
     border-radius: 30px;
     font-size: 5px;
@@ -68,4 +73,244 @@ body {
     background: rgb(215, 215, 215);
     color: black;
     
+}
+
+.click {
+    width: 25%;
+}
+
+.arte {
+    background: rgb(233, 233, 233);
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 15px;
+
+}
+
+.xicara {
+    background: gray;
+    width: 150px;
+    height: 100px;
+    border-radius: 0px 0px 60px 60px;
+    position: relative;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alca {
+    position: absolute;
+    background: transparent;
+    width: 60px;
+    height: 60px;
+    border: 10px solid gray;
+    border-radius: 50%;
+    top: 10px;
+    right: 120px;
+}
+
+.vapor {
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    background: transparent;
+    color: rgb(52, 52, 52);
+    font-size: 20px;
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    top: -80px;
+    right: 15px;
+}
+.mesa {
+    position: absolute;
+    background: brown;
+    width: 600px;
+    height: 15px;
+    border-radius: 5px;
+    top: 100px;
+    right: -225px;
+}
+
+.mel {
+    background: rgb(209, 164, 17);
+    width: 120px;
+    height: 140px;
+    border-radius: 60px 60px 60px 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pelo{
+    background: rgb(220, 219, 217);
+    width: 50px;
+    height: 130px;
+    border-radius: 30px 30px 30px 30px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.pataesq {
+    background: rgb(223, 181, 44);
+    width: 40px;
+    height: 60px;
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    top: 80px;
+    right: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patadir {
+    background: rgb(223, 181, 44);
+    width: 40px;
+    height: 60px;
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    top: 80px;
+    left: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pataesq01 {
+    background: rgb(223, 181, 44);
+    width: 30px;
+    height: 15px;
+    border-radius: 15px 0px 0px 0px;
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patadir01 {
+    background: rgb(223, 181, 44);
+    width: 30px;
+    height: 15px;
+    border-radius: 0px 15px 0px 0px;
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabeca {
+    background: rgb(223, 181, 44);
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    position: absolute;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.orelhadir {
+    width: 0px;
+            height: 0;
+            border-left: 15px solid transparent; /* Transparente à esquerda */
+            border-right: 15px solid transparent; /* Transparente à direita */
+            border-bottom: 25px solid rgb(209, 164, 17); /* Cor do triângulo */
+            transform: rotate(-45deg);
+    position: absolute;
+    top: -5px;
+    right: 70px;
+}
+
+.orelhaesq {
+    width: 0px;
+            height: 0;
+            border-left: 15px solid transparent; /* Transparente à esquerda */
+            border-right: 15px solid transparent; /* Transparente à direita */
+            border-bottom: 25px solid rgb(209, 164, 17); /* Cor do triângulo */
+            transform: rotate(45deg);
+    position: absolute;
+    top: -5px;
+    left: 70px;
+}
+
+.nariz {
+    width: 0px;
+            height: 0;
+            border-left: 10px solid transparent; /* Transparente à esquerda */
+            border-right: 10px solid transparent; /* Transparente à direita */
+            border-bottom: 15px solid rgb(235, 192, 231); /* Cor do triângulo */
+            transform: rotate(180deg);
+    position: absolute;
+    top: 50px;
+}
+
+.olhodir {
+    background: rgb(0, 0, 0);
+    width: 5px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+}
+
+.olhoesq {
+    background: rgb(0, 0, 0);
+    width: 5px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+.bracodir {
+    background: rgb(223, 181, 44);
+    width: 40px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    top: 40px;
+    right: 100px;
+}
+
+.bracoesq {
+    background: rgb(223, 181, 44);
+    width: 40px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+.rabo {
+    background: transparent;
+    width: 120px;
+    height: 120px;
+    color: rgb(209, 164, 17);
+    font-size: 100px;
+    border-radius: 60px 60px 60px 60px;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
