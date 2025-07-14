@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
-
 body {
     background-color: rgb(167, 198, 226);
 }
@@ -17,11 +16,11 @@ body {
 
 .moldura {
     background: repeating-linear-gradient(
-        235deg,  /* Ângulo das listras */
-        #4e2707,  /* Cor 1 */
-        #231d0e 20px,  /* Espessura da listra */
-        #402503 20px,  /* Cor 2 */
-        #2a2929 40px   /* Espaço entre as listras */
+        235deg,
+        #4e2707,
+        #231d0e 20px,
+        #402503 20px,
+        #2a2929 40px
     );
     width: 80vw;
     height: 80vh;
@@ -72,14 +71,25 @@ body {
 .selecao:hover {
     background: rgb(215, 215, 215);
     color: black;
-    
 }
 
 .click {
     width: 25%;
 }
 
-.arte {
+.inicio {
+    width: 90%;
+    height: 85%;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    padding: 0;
+    font-size: 14px;
+}
+
+/* Primeira Arte - Xícara */
+
+.arte01 {
     background: rgb(233, 233, 233);
     width: 100%;
     height: 85%;
@@ -89,7 +99,6 @@ body {
     align-items: center;
     padding: 0;
     border-radius: 15px;
-
 }
 
 .xicara {
@@ -135,6 +144,20 @@ body {
     border-radius: 5px;
     top: 100px;
     right: -225px;
+}
+
+/* Segunda Arte - Gato amarelo */
+
+.arte02 {
+    background: rgb(242, 211, 245);
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 15px;
 }
 
 .mel {
@@ -228,11 +251,11 @@ body {
 
 .orelhadir {
     width: 0px;
-            height: 0;
-            border-left: 15px solid transparent; /* Transparente à esquerda */
-            border-right: 15px solid transparent; /* Transparente à direita */
-            border-bottom: 25px solid rgb(209, 164, 17); /* Cor do triângulo */
-            transform: rotate(-45deg);
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid rgb(209, 164, 17);
+    transform: rotate(-45deg);
     position: absolute;
     top: -5px;
     right: 70px;
@@ -240,11 +263,11 @@ body {
 
 .orelhaesq {
     width: 0px;
-            height: 0;
-            border-left: 15px solid transparent; /* Transparente à esquerda */
-            border-right: 15px solid transparent; /* Transparente à direita */
-            border-bottom: 25px solid rgb(209, 164, 17); /* Cor do triângulo */
-            transform: rotate(45deg);
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid rgb(209, 164, 17);
+    transform: rotate(45deg);
     position: absolute;
     top: -5px;
     left: 70px;
@@ -252,11 +275,11 @@ body {
 
 .nariz {
     width: 0px;
-            height: 0;
-            border-left: 10px solid transparent; /* Transparente à esquerda */
-            border-right: 10px solid transparent; /* Transparente à direita */
-            border-bottom: 15px solid rgb(235, 192, 231); /* Cor do triângulo */
-            transform: rotate(180deg);
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid rgb(235, 192, 231);
+    transform: rotate(180deg);
     position: absolute;
     top: 50px;
 }
@@ -313,4 +336,93 @@ body {
     right: 10px;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Terceira Arte - Balões de ar */
+
+.arte03 {
+    background: rgb(169, 224, 232);
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.balao {
+    position: relative;
+    width: 130px;
+    height: 140px;
+    top: -40px;
+    background: radial-gradient(circle, rgb(3, 168, 33) 40%, rgb(39, 191, 18) 50%, rgb(4, 164, 18) 70%);
+    border-radius: 50% 50% 70% 70%;
+}
+
+.balao {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    top: -40px;
+    background: radial-gradient(circle, rgb(3, 168, 33) 40%, rgb(39, 191, 18) 50%, rgb(4, 164, 18) 70%);
+    border-radius: 40% 40% 70% 70%;
+}
+
+.balao01 {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    top: -40px;
+    background: radial-gradient(circle, rgb(190, 55, 205) 40%, rgb(190, 55, 190) 50%, rgb(190, 55, 180) 50%);
+    border-radius: 50% 50% 70% 70%;
+}
+
+.balao02 {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    top: -40px;
+    background: linear-gradient(180deg, red, orange, yellow);
+    border-radius: 50% 50% 70% 70%;
+}
+
+.cordas {
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.corda {
+    width: 2px;
+    height: 40px;
+    background: #8B4513;
+}
+
+.cesta {
+    position: absolute;
+    top: 165px;
+    width: 50px;
+    left: 60px;
+    height: 30px;
+    background: #8B4513;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+.ar {
+    background: transparent;
+    width: 75%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
 }
