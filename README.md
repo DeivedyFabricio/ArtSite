@@ -9,7 +9,7 @@ Neste post apresento um simples site com algumas artes/desenhos, utilizando some
 
 ## Como usar
 
-Você pode realizar o upload dos arquivos através do GitHub e executar pelo seu navegador.
+Você pode realizar o download dos arquivos através do GitHub e executar pelo seu navegador.
 
 ## Objetivo do Projeto
 
